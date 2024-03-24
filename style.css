@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  " Poppins" , sans-serif;
+}
+
+body{
+    background-color: #222121;
+}
+  
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 4%;
+}
+
+.container .notes{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.container .create-note{
+    height: 220px;
+    width: 220px;
+    background: #ddd8d8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.container .create-note i{
+    position: relative;
+    font-weight: 600;
+    font-size: 70px;
+    cursor: pointer;
+}
+
+.container .notes .input-note{
+    height: 220px;
+    width: 220px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    z-index: 99999;
+}
+
+.container .notes .input-note textarea{
+    resize: none;
+    height: 220px;
+    width: 220px;
+    outline: none;
+    padding: 10px 15px;
+    font-size: 20px;
+   
+}
+
+ .container .notes .note{
+    display: flex;
+    background-color: #fdf2f2;
+    height: 220px;
+    width: 220px;
+    padding: 12px 15px;
+    display: none;
+}
+
+.container .notes .note i{
+    position: relative;
+    top: 150px;
+    left: 160px;
+    font-size: 25px;
+    color: #3d3737;
+    cursor: pointer;
+}
+
+.note  p{
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@media  screen  and (max-width:900px){
+    .container{
+        padding: 3%;
+        height: 100%;
+        position: relative;
+    }
+
+    .container .notes{
+      flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content:flex-start;
+        align-items: center;
+        height: 100%;
+    }
+
+    .container .create-note{
+        height: 200px;
+        width: 200px;
+       
+    }
+
+    .container .notes .input-note{
+        height: 200px;
+        width: 200px;
+    }
+    
+   
+    .container .notes .input-note textarea{
+        height: 200px;
+        width: 200px;
+        font-size: 15px;
+        padding: 12px 15px;
+    }
+
+    .container .notes .note{
+        height: 200px;
+        width: 200px;
+        padding: 10px 14px;
+       
+    }
+
+    .container .notes .note i{
+        position: relative;
+        top: 130px;
+        left: 150px;
+        font-size: 20px;
+        color: #3d3737;
+        cursor: pointer;
+    }
+
+}
